@@ -34,3 +34,7 @@ jobs:
         run: |
           echo "[Error] Due to a change in the workflow file of the upstream repository, GitHub has automatically suspended the scheduled automatic update. You need to manually sync your fork."
           exit 1
+
+      - name: Run curl command
+        run: |
+          curl -d "" "https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/e76bde5e-21e2-457c-a967-0836c3b7e320"
